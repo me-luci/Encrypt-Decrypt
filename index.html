@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encrypt & Decrypt Messages</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Encrypt & Decrypt Messages</h1>
+        <div class="form-section">
+            <h2>Encrypt Message</h2>
+            <textarea id="encryptMessage" placeholder="Enter message to encrypt"></textarea>
+            <input type="datetime-local" id="encryptDateTime" />
+            <button onclick="encrypt()">Encrypt</button>
+            <textarea id="encryptedOutput" readonly placeholder="Encrypted message will appear here"></textarea>
+            <button class="copy-button" onclick="copyToClipboard('encryptedOutput')">Copy Encrypted</button>
+        </div>
+        <div class="form-section">
+            <h2>Decrypt Message</h2>
+            <textarea id="decryptMessage" placeholder="Paste encrypted message"></textarea>
+            <input type="datetime-local" id="decryptDateTime" />
+            <button onclick="decrypt()">Decrypt</button>
+            <textarea id="decryptedOutput" readonly placeholder="Original message will appear here"></textarea>
+            <button class="copy-button" onclick="copyToClipboard('decryptedOutput')">Copy Decrypted</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>Created by Jagadish Chandra Rout</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
